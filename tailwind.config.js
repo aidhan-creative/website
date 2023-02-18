@@ -10,13 +10,32 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+      sans: ["var(--font-inter)"],
+      serif: ["var(--font-lora)"],
+      mono: ["var(--font-firacode)"],
     },
     extend: {},
   },
+
+  corePlugins: {
+    aspectRatio: false,
+  },
+
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    require("daisyui"),
   ],
+
+  daisyui: {
+    styled: true,
+    themes: ["light", "dark"],
+    base: true,
+    utils: true,
+    logs: false,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
 };

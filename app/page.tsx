@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="bg-gradient-to-r from-blue-300 to-cyan-300 min-w-screen min-h-screen">
@@ -25,7 +27,9 @@ export default function Home() {
             <div className="p-12">test</div>
           </div>
           <div className="border-2 rounded-2xl border-neutral-600/25 bg-white col-span-4">
-            <div className="p-12">test</div>
+            <div className="p-12">
+              <Link href="/test">test</Link>
+            </div>
           </div>
           <div className="border-2 rounded-2xl border-neutral-600/25 bg-white col-span-2">
             <div className="p-12">test</div>

@@ -1,11 +1,7 @@
-import "./globals.css";
-import { Inter } from "@next/font/google";
-import { AnalyticsWrapper } from "./components/analytics";
+import { inter, lora, firaCode } from "@/app/fonts";
+import { AnalyticsWrapper } from "@/app/components/analytics";
 
-const inter = Inter({
-  weight: ["400", "700", "900"],
-  subsets: ["latin"],
-});
+import "@/app/globals.css";
 
 export default function RootLayout({
   children,
@@ -13,13 +9,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`
+      ${inter.variable} 
+      ${lora.variable} 
+      ${firaCode.variable}
+      `}
+    >
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className={inter.className}>
+      <body className="antialiased">
         {children}
         <AnalyticsWrapper />
       </body>
