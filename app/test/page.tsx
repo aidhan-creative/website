@@ -14,7 +14,7 @@ export default function Test() {
             </p>
           </div>
           <div className="">
-            <button class="btn btn-primary">Get Started</button>
+            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </section>
