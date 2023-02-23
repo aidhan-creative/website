@@ -1,6 +1,8 @@
 {
     "recommendations": [
         "esbenp.prettier-vscode",
-        "visualstudioexptteam.vscodeintellicode"
+        "visualstudioexptteam.vscodeintellicode",
+        "rvest.vs-code-prettier-eslint",
+        "dbaeumer.vscode-eslint"
     ]
 }
