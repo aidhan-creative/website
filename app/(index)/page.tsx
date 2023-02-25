@@ -5,7 +5,9 @@ export default function Index() {
   return (
     <div>
       <section id="section-one" className="my-32">
-        <h1 className="text-5xl text-center mb-12">A big 'ol hero title</h1>
+        <h1 className="text-5xl text-center mb-12">
+          A big &lsquo;ol hero title
+        </h1>
         <div className="hero-content flex-col md:flex-row justify-around">
           <div className="text-right">
             beautiful boobies or astonishing asses?

@@ -1,4 +1,4 @@
-import { inter, lora, firaCode } from "@/app/fonts";
+import { sourceSansPro, inter, lora, firaCode } from "@/app/fonts";
 import { AnalyticsWrapper } from "@/app/components/analytics";
 
 import "@/app/globals.css";
@@ -12,9 +12,10 @@ export default function RootLayout({
     <html
       lang="en"
       className={`
-      ${inter.variable} 
+      ${sourceSansPro.variable} 
       ${lora.variable} 
       ${firaCode.variable}
+      ${inter.variable}
       `}
     >
       {/*
@@ -22,7 +23,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="antialiased">
+      <body className="subpixel-antialiased max-w-screen overflow-x-hidden">
         {children}
         <AnalyticsWrapper />
       </body>
